@@ -1,0 +1,595 @@
+/* media query */
+
+@media only screen and (max-width: 768px) {
+    #page-home aside{
+      padding-left: 15px !important;
+      height: fit-content;
+    }
+
+    #carousel {
+        width: 100% !important;
+        border: none !important;
+    }
+
+    #home-info {
+        padding: 0 !important;
+    }
+
+    #menu-footer {
+        display: none;
+    }
+
+    .project-card {
+        margin-bottom: 200px;
+    }
+
+    #page-products nav {
+        display: none;
+    }
+
+    .product .title h2{
+        font-size: 15px;
+    }
+
+    .project-card .text {
+        width: 60% !important;
+    }
+
+    .project-card .text-r, .project-card .text-l {
+        padding: 0 !important;
+    }
+
+    .project-card .horizontal-line {
+        display: none;
+    }
+    
+    .picture-frame {
+        width: 100% !important;
+    }
+
+    #hakwood-material {
+        margin: 0 !important;
+    }
+
+}
+
+/* font */
+
+@font-face {
+    font-family: "montSerrat";
+    src: url("montserrat.eot");
+    src: url("montserrat.woff") format("woff"),
+    url("montserrat.otf") format("opentype"),
+    url("montserrat.svg#filename") format("svg");
+}
+
+/* styling */
+
+html, body{
+    display: grid;
+    height: 100%;
+    font-family: 'montSerrat' !important;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    padding: 42px 65px 30px 65px;
+    width: 100%;
+    z-index: 1;
+}
+
+.vertical-line {
+    background: #651B1A;
+    height: 90px;
+    width: 3px;
+    position: absolute;
+}
+
+.horizontal-line {
+    background: #651B1A;
+    height: 3px;
+    width: 90px;
+    position: absolute;
+}
+
+.horizontal-line.sm {
+    width: 70px;
+}
+
+a {
+    color: #D5D5D5 !important;
+}
+
+a:active {
+    color: #651B1A !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #651B1A !important;
+    text-decoration: none !important;
+}
+
+nav img {
+    width: 24%;
+    min-width: 168px;
+}
+
+#links {
+    float: right;
+}
+
+.social-links i {
+    font-size: 20px;
+}
+
+.social-links i, #links span {
+    margin-left: 32px;
+}
+
+#links span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main {
+    height: 100%;
+    position: relative;
+}
+
+main section, main aside {
+    padding-top: 127px;
+}
+
+
+.contato-info {
+    font-size: 12px;
+    color: #13100D;
+}
+
+.close-icon {
+    float: right;
+    font-size: 40px;
+    transition: all 0.6s;
+    color: #651B1A;
+}
+
+.close-icon:hover {
+    cursor: pointer;
+    transform: rotateZ(360deg);
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+/* home */
+
+#page-home .row {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+aside {
+    height: 100%;
+    background: #f8f8f8;
+    padding-left: 69px !important;
+}
+
+aside div {
+    margin-bottom: 10px;
+}
+
+#home-info {
+    background: #ffffff;
+    padding: 160px 48px 57px 71px;
+}
+
+#home-info div hr {
+    width: 13%;
+    position: absolute;
+    background: #651B1A;
+    z-index: 1;
+    height: 1px;
+    top: 63px;
+    left: 12%;
+}
+
+#home-info div {
+    position: relative;
+    padding: 60px 100px 60px 28%;
+    border: 13px solid #f8f8f8;
+    height: 100%;
+}
+
+#home-info h2 {
+    width: 10%;
+}
+
+.button-red {
+    background: none;
+    border: 2px solid #651B1A;
+    width: 40px;
+    height: 40px;
+}
+
+.button-red i{
+    color: #651B1A;
+}
+
+#home-info span{
+    margin-right: 15px;
+}
+
+
+#carousel {
+    width: 156%;
+    z-index: 1;
+    border-right: 14px solid #ffffff;
+}
+
+/* menu */
+
+#page-menu {
+    border: 20px solid #ffffff;
+    background: #F8F8F8;
+}
+
+#page-menu section{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#page-menu section a{
+    display: block;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+#page-menu section a span{
+    font-size: 25px;
+    color: #13100D;
+}
+
+#page-menu section a i{
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+#page-menu .social-links {
+    margin-top: 35px;
+}
+
+#page-menu .social-links a{
+    color: #13100D !important;
+}
+
+
+#page-menu .contato-info {
+    text-align: right;
+    color: #707070;
+}
+
+#menu-footer {
+    padding-left: 15px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* about  */
+
+#page-about .row {
+    width: 100%;
+}
+
+#page-about #header {
+    text-align: center;
+    padding-bottom: 57px;
+    position: relative;
+}
+
+#page-about #header .vertical-line {
+    bottom: -45px;
+}
+
+#page-about section {
+    background: #F8F8F8;
+}
+
+#page-about #content {
+    background: #ffffff;
+    margin: 0;
+}
+
+.description, .banner, .project-card {
+    margin-top: 90px;
+}
+
+.description span {
+    font-weight: bold;
+    color: #13100D;
+}
+
+.description h5{
+    color: #13100D;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.description p {
+    color: #13100D;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner .text-box{
+    color: #651B1A;
+    width: 70%;
+    border: 15px solid #F8F8F8;
+    padding: 73px 100px 76px 30px;
+    font-weight: bold;
+}
+
+.banner figure {
+    position: absolute;
+    right: 0;
+    top: -26px;
+    width: 50%;
+    border-bottom: 15px solid #ffffff;
+}
+
+.project-card {
+    position: relative;
+}
+
+.project-card img {
+    width: 60%;
+}
+
+.project-card .sample {
+    position: absolute;
+    bottom: -60px;
+    height: 100px;
+    width: 100px;
+}
+
+.project-card .sample-l {
+    right: 35px;
+}
+
+.project-card .sample-r {
+    left: 35px;
+}
+
+.project-card .text {
+    width: 40%;
+    position: relative;
+    color: #707070;
+}
+
+.project-card .title {
+    font-weight: bolder;
+    color: #13100D;
+}
+
+.project-card .text .horizontal-line{
+    top: 120px;
+}
+
+.project-card .text-r .horizontal-line {
+    left: -25px;
+}
+
+.project-card .text-l .horizontal-line {
+    right: -25px;
+}
+
+.project-card .text-r {
+    float: right;
+    padding: 13% 0 0 13%;
+}
+
+.project-card .text-l {
+    float: left;
+    padding: 13% 13% 0 0; 
+}
+
+.shortcut {
+    background: #f8f8f8;
+    padding: 41px 0px;
+    margin-bottom: 90px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.shortcut label{
+    margin-right: 22px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer {
+    background: #13100D;
+    width: 100%;
+    color: #ffffff;
+    margin: 0 !important;
+    height: 45px;
+    padding-top: 13px !important;
+    padding-right: 24px !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    font-size: 12px;
+}
+
+.footer .social-links {
+    text-align: right;
+}
+
+#btn-scroll-up {
+    position: fixed;
+    right: 15px;
+    bottom: 60px;
+}
+
+/* products */
+
+#page-products .row{
+    height: 100%;
+}
+
+#page-products section {
+    margin: 0;
+    padding: 0;
+}
+
+.product {
+    margin: 0;
+    padding: 0;
+    border: #d5d5d5 solid 1px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.product .horizontal-line.sm {
+    left: calc(50% - 35px);
+}
+
+.product .title {
+    display: block;
+}
+
+.product .title h2 {
+    padding-top: 13px;
+}
+
+.product .title, .product .button-frame {
+    margin-top: 70%;
+}
+
+.product button {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ffffff;
+    background: none;
+}
+
+.product button i {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.product-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#product1 .product-bg {
+    background-image: url(../assets/img/accoya.png);
+}
+
+#product2 .product-bg {
+    background-image: url(../assets/img/hakwood.png);
+}
+
+#product3 .product-bg {
+    background-image: url(../assets/img/ayawood.png);
+}
+
+.product:hover > .title {
+    display: none;
+}
+
+.product:hover > .product-bg {
+    opacity: 1;
+}
+
+.product:hover > .button-frame {
+    display: block;
+}
+
+#product1:hover ~ nav img {
+    filter: invert(1);
+}
+
+#product3:hover + nav div i, #product3:hover + nav div span {
+    color: #651B1A;
+}
+
+.button-frame {
+    position: relative;
+    display: none;
+    text-align: center;
+    z-index: 2;
+}
+
+.material {
+    width: 80px;
+    height: 80px;
+}
+
+.sample-frame {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.sample-frame img {
+    float: left;
+}
+
+.title-big {
+    color: #651B1A;
+    font-weight: bolder;
+    margin-top: 90px;
+    margin-bottom: -40px;
+}
+
+.picture-frame {
+    width: 60%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+    display: inline-block;
+}
+
+.brand {
+    margin-top: 90px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.brand .text {
+    margin-left: 98px;
+    border: 8px solid #f8f8f8;
+    padding: 25px 30px 24px 60px;
+    width: fit-content;
+    font-size: 13px;
+    text-align: right;
+}
+
+.brand figure {
+    padding: 12px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    border: 1px solid #00000029;
+    background: white;
+    width: 155px;
+}
