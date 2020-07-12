@@ -330,12 +330,13 @@ aside div {
     position: relative;
 }
 
-.banner .text-box{
+.banner .text-box {
     color: #651B1A;
     width: 70%;
     border: 15px solid #F8F8F8;
-    padding: 73px 100px 76px 30px;
-    font-weight: bold;
+    padding: 52px 20% 55px 30px;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 .banner figure {
